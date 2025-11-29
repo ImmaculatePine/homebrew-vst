@@ -17,8 +17,6 @@ cask "fractal-cab-lab-4" do
     end
   end
 
-  depends_on macos: ">= :high_sierra"
-
   pkg "Cab-Lab 4 Installer v#{version}.pkg"
 
   uninstall pkgutil: "com.fractalaudio.cab-lab-4"
