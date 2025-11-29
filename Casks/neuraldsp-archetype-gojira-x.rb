@@ -14,5 +14,8 @@ cask "neuraldsp-archetype-gojira-x" do
 
   uninstall pkgutil: "com.neuraldsp.ArchetypeGojiraX*"
 
-  zap trash: "~/Library/Application Support/Neural DSP/Archetype Gojira X"
+  zap trash: [
+    "/Library/Audio/Presets/Neural DSP/Archetype Gojira X/User",
+    "~/Library/Application Support/Neural DSP/Archetype Gojira X",
+  ]
 end
