@@ -1,6 +1,6 @@
 cask "neuraldsp-archetype-misha-mansoor-x" do
-  version "1.0.0"
-  sha256 "2d9c44757db5ca0607dfd2c9e0a25661a453136ce2f3da09bd51734e050bf6d3"
+  version "1.0.1"
+  sha256 "d00887d0786901edfa013df3be7c6e13e5d9dbceb6e0edc8c84bc3a85cf1ad21"
 
   url "https://downloads.neuraldsp.com/file/archetype-misha-mansoor-x-installers/v_#{version}/mac/Archetype%20Misha%20Mansoor%20X%20v#{version}.pkg"
   name "Neural DSP Archetype: Misha Mansoor X"
@@ -14,5 +14,8 @@ cask "neuraldsp-archetype-misha-mansoor-x" do
 
   uninstall pkgutil: "com.neuraldsp.ArchetypeMishaMansoorX*"
 
-  zap trash: "~/Library/Application Support/Neural DSP/Archetype Misha Mansoor X"
+  zap trash: [
+    "/Library/Audio/Presets/Neural DSP/Archetype Misha Mansoor X/User",
+    "~/Library/Application Support/Neural DSP/Archetype Misha Mansoor X",
+  ]
 end

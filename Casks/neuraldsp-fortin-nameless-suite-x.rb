@@ -14,5 +14,6 @@ cask "neuraldsp-fortin-nameless-suite-x" do
 
   uninstall pkgutil: "com.neuraldsp.FortinNamelessSuiteX*"
 
-  zap trash: "~/Library/Application Support/Neural DSP/Fortin Nameless Suite X"
+  zap trash: ["~/Library/Application Support/Neural DSP/Fortin Nameless Suite X",
+              "/Library/Audio/Presets/Neural DSP/Fortin Nameless Suite X/User"]
 end

@@ -14,5 +14,6 @@ cask "neuraldsp-archetype-tim-henson-x" do
 
   uninstall pkgutil: "com.neuraldsp.ArchetypeTimHensonX*"
 
-  zap trash: "~/Library/Application Support/Neural DSP/Archetype Tim Henson X"
+  zap trash: ["~/Library/Application Support/Neural DSP/Archetype Tim Henson X",
+              "/Library/Audio/Presets/Neural DSP/Archetype Tim Henson X/User"]
 end

@@ -14,5 +14,6 @@ cask "neuraldsp-archetype-nolly-x" do
 
   uninstall pkgutil: "com.neuraldsp.ArchetypeNollyX*"
 
-  zap trash: "~/Library/Application Support/Neural DSP/Archetype Nolly X"
+  zap trash: ["~/Library/Application Support/Neural DSP/Archetype Nolly X",
+              "/Library/Audio/Presets/Neural DSP/Archetype Nolly X/User"]
 end
