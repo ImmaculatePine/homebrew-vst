@@ -8,7 +8,6 @@ cask "mixwave-spiritbox-mike-stringer" do
   desc "Heaviest plugin from the guitarist of Spiritbox: Mike Stringer"
   homepage "https://mixwave.com/products/spiritbox-mike-stringer"
 
-  depends_on macos: ">= :high_sierra"
   depends_on cask: "ilok-license-manager"
 
   pkg "MixWave+Spiritbox+-+Mike+Stringer+v#{version}.pkg"
