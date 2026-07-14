@@ -7,7 +7,6 @@ cask "cradle-hub" do
   desc "Cradle plugins installer"
   homepage "https://cradle.app/pages/cradle-hub"
 
-  depends_on cask: "ilok-license-manager"
   depends_on :macos
 
   pkg "CradleHub-v#{version}-Setup.pkg"
